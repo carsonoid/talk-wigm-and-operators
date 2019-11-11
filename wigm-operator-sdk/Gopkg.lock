@@ -36,7 +36,7 @@
 [[projects]]
   branch = "master"
   digest = "1:cdb7d768045f5de336c14bf134b5ce3eac46b11c0fe41d41b6010ef521dd7271"
-  name = "github.com/carsonoid/talk-kubernetes-operators"
+  name = "github.com/carsonoid/talk-wigm-and-operators"
   packages = [
     "wigm-operator-sdk/pkg/apis",
     "wigm-operator-sdk/pkg/apis/wigm/v1",
@@ -819,10 +819,10 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/carsonoid/talk-kubernetes-operators/wigm-operator-sdk/pkg/apis",
-    "github.com/carsonoid/talk-kubernetes-operators/wigm-operator-sdk/pkg/apis/wigm/v1",
-    "github.com/carsonoid/talk-kubernetes-operators/wigm-operator-sdk/pkg/controller",
-    "github.com/carsonoid/talk-kubernetes-operators/wigm-operator-sdk/pkg/controller/wigmgif",
+    "github.com/carsonoid/talk-wigm-and-operators/wigm-operator-sdk/pkg/apis",
+    "github.com/carsonoid/talk-wigm-and-operators/wigm-operator-sdk/pkg/apis/wigm/v1",
+    "github.com/carsonoid/talk-wigm-and-operators/wigm-operator-sdk/pkg/controller",
+    "github.com/carsonoid/talk-wigm-and-operators/wigm-operator-sdk/pkg/controller/wigmgif",
     "github.com/operator-framework/operator-sdk/pkg/k8sutil",
     "github.com/operator-framework/operator-sdk/pkg/leader",
     "github.com/operator-framework/operator-sdk/pkg/ready",

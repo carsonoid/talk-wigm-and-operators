@@ -1,7 +1,7 @@
 package apis
 
 import (
-	"github.com/carsonoid/talk-kubernetes-operators/wigm-operator-sdk/pkg/apis/wigm/v1"
+	"github.com/carsonoid/talk-wigm-and-operators/wigm-operator-sdk/pkg/apis/wigm/v1"
 )
 
 func init() {

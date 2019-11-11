@@ -3,7 +3,7 @@ package wigmgif
 import (
 	"context"
 
-	wigmv1 "github.com/carsonoid/talk-kubernetes-operators/wigm-operator-sdk/pkg/apis/wigm/v1"
+	wigmv1 "github.com/carsonoid/talk-wigm-and-operators/wigm-operator-sdk/pkg/apis/wigm/v1"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	extensionsv1beta1 "k8s.io/api/extensions/v1beta1"

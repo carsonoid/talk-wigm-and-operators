@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/carsonoid/talk-kubernetes-operators/wigm-operator-sdk/pkg/controller/wigmgif"
+	"github.com/carsonoid/talk-wigm-and-operators/wigm-operator-sdk/pkg/controller/wigmgif"
 )
 
 func init() {

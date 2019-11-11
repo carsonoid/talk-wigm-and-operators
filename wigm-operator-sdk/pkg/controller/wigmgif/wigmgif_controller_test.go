@@ -14,7 +14,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client/fake"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	wigmv1 "github.com/carsonoid/talk-kubernetes-operators/wigm-operator-sdk/pkg/apis/wigm/v1"
+	wigmv1 "github.com/carsonoid/talk-wigm-and-operators/wigm-operator-sdk/pkg/apis/wigm/v1"
 )
 
 // Example of e2e testing with the fake client

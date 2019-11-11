@@ -11,7 +11,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	wigmv1 "github.com/carsonoid/talk-kubernetes-operators/wigm-operator-sdk/pkg/apis/wigm/v1"
+	wigmv1 "github.com/carsonoid/talk-wigm-and-operators/wigm-operator-sdk/pkg/apis/wigm/v1"
 )
 
 func (r *ReconcileWigmGif) syncDeployment(instance *wigmv1.WigmGif) (reconcile.Result, error) {

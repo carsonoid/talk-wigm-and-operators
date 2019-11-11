@@ -7,8 +7,8 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/carsonoid/talk-kubernetes-operators/wigm-operator-sdk/pkg/apis"
-	"github.com/carsonoid/talk-kubernetes-operators/wigm-operator-sdk/pkg/controller"
+	"github.com/carsonoid/talk-wigm-and-operators/wigm-operator-sdk/pkg/apis"
+	"github.com/carsonoid/talk-wigm-and-operators/wigm-operator-sdk/pkg/controller"
 	"github.com/operator-framework/operator-sdk/pkg/k8sutil"
 	"github.com/operator-framework/operator-sdk/pkg/leader"
 	"github.com/operator-framework/operator-sdk/pkg/ready"
