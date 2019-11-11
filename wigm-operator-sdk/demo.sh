@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ../demo-magic.sh -n
+. ./demo-magic.sh -n
 
 export TYPE_SPEED=402
 export DEMO_COMMENT_COLOR=$CYAN

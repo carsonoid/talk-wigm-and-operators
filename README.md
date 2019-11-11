@@ -1,4 +1,4 @@
-# Kubernetes Operators
+# KubeCon 19: WIGM and Operators
 
 ## Slides
 
@@ -13,30 +13,22 @@ WIGM is a sample project that is designed to help users understand why operators
 * `metacontroller`
 * `operator-sdk`
 
-Each folder contains the following common files:
+## Operator Demo
 
-#### `start-and-watch.sh`
+#### Start the cluster
 
-* Bootstraps a Kubernetes cluster with docker-compose using [k3s](https://github.com/rancher/k3s)
-* Configures it for the demo
-* Watches applicable resources
+* `cd wigm-operator-sdk`
+* `./start-and-watch.sh`
+  * Bootstraps a Kubernetes cluster with docker-compose using [k3s](https://github.com/rancher/k3s)
+  * Configures it for the demo
+  * Watches applicable resources
 
 After the cluster has started. There will be a `kubeconfig.yaml` file in the current directory. `kubectl` can be used on the user's machine to access the demo cluster at any time by passing a flag (`kubectl --kubeconfig=kubeconfig.yaml`) or exporting an environment variable (`export KUBECONFIG=./kubeconfig.yaml`).
 
-#### `demo.sh`
+#### Run Demo: `demo.sh`
 
 An automatic demo script which walks the user through a few WIGM deployments with the demo architecture
 
-#### `cleanup.sh`
+#### Cleanup: `cleanup.sh`
 
 Brings down the docker resources and cleans up the docker volumes. NOTE: This deletes all cluster state
-
-## Try It Out
-
-Run a test cluster and demo for any deployment method
-
-1. `cd METHODFOLDER`
-2. `./start-and-watch.sh`
-3. In a new terminal: `./demo.sh`
-4. Optional: Run extra `kubectl` commands against the demo cluster if desired
-5. Optional: `./cleanup.sh`
