@@ -21,6 +21,6 @@ for obj in services ingresses deployments pods; do
 done
 
 echo "################ wigmgifs"
-$KUBECTL get wigmgifs -ocustom-columns=NAME:.metadata.name,DEPLOYMENT:.status.deployment.created,SERVICE:.status.service.created,SVCTYPE:.status.service.type,INGRESS:.status.ingress.created
+$KUBECTL get wigmgifs
 echo
 '

@@ -2,7 +2,7 @@
 
 . ./demo-magic.sh -n
 
-export TYPE_SPEED=402
+export TYPE_SPEED=80
 export DEMO_COMMENT_COLOR=$CYAN
 
 export KUBECTL="kubectl --kubeconfig=kubeconfig.yaml"
