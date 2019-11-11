@@ -54,7 +54,9 @@ wait
 
 # ----------------------------- Enable Ingress
 p "# Enable ingress"
-pe "$KUBECTL patch wigmgif operator1 -p '{\"spec\":{\"ingress\":{\"enabled\":true}}}' --type=merge"
+p "$KUBECTL patch wigmgif operator1 -p '{\"spec\":{\"ingress\":{\"enabled\":true}}}' --type=merge"
+wait
+$KUBECTL patch wigmgif operator1 -p '{"spec":{"ingress":{"enabled":true}}}' --type=merge
 wait
 
 # ----------------------------- Proxy

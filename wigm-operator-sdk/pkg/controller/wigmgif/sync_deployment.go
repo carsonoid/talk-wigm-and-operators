@@ -41,8 +41,12 @@ func (r *ReconcileWigmGif) syncDeployment(instance *wigmv1.WigmGif) (reconcile.R
 		return reconcile.Result{}, err
 	}
 
-	// Deployment exists - set status
-	instance.Status.Deployment = wigmv1.DeploymentStatus{Created: true}
+	// Deployment exists and has fully ready pods
+	if foundDeployment.Status.UnavailableReplicas == 0 {
+		instance.Status.Deployment = wigmv1.DeploymentStatus{Ready: true}
+	} else {
+		instance.Status.Deployment = wigmv1.DeploymentStatus{Ready: false}
+	}
 
 	// Detect a diff in desired ENV variables and update the deployment if they are different
 	if deploymentContainerEnvDiff(deployment, foundDeployment, "gifhost", "GIF_TITLE") ||

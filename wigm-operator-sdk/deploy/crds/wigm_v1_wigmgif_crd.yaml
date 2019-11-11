@@ -21,11 +21,11 @@ spec:
     type: string
     description: The title of the gif
     JSONPath: .spec.gif.title
-  - name: DeploymentOK
+  - name: DeploymentRDY
     type: boolean
-    description: Is the deployment created
-    JSONPath: .status.deployment.created
-  - name: ServiceOK
+    description: Is the deployment ready
+    JSONPath: .status.deployment.ready
+  - name: ServiceCrtd
     type: boolean
     description: Is the service created
     JSONPath: .status.service.created
@@ -33,7 +33,7 @@ spec:
     type: string
     description: The type of service for the instance
     JSONPath: .status.service.type
-  - name: IngressEnabled
+  - name: IngressCrtd
     type: string
     description: The type of service for the instance
     JSONPath: .status.ingress.created

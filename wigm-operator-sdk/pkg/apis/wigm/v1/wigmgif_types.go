@@ -43,7 +43,7 @@ type WigmGifStatus struct {
 }
 
 type DeploymentStatus struct {
-	Created bool `json:"created"`
+	Ready bool `json:"ready"`
 }
 
 type ServiceStatus struct {
