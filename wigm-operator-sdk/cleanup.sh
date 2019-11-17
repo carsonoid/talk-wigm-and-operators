@@ -2,4 +2,4 @@
 
 docker-compose kill
 docker-compose down
-docker volume rm wigm-operator-sdk_wigm-k8s
+docker volume rm wigmoperatorsdk_wigm-k8s
