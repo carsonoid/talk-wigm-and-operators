@@ -16,6 +16,7 @@ metadata:
   name: operator1
 spec:
   gif:
+    title: operator1
     link: https://media.giphy.com/media/l2JegGMtnxw0Nq3pC/giphy.gif
   service:
     create_cloud_lb: true
