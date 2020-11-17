@@ -4,6 +4,8 @@
 
 Slides are found here in PDF format
 
+[Recording Here](https://www.youtube.com/watch?v=TKpQNKWRWHo)
+
 ## WIGM
 
 WIGM is a sample project that is designed to help users understand why operators are useful. The project provides folders for 4 different deployment methods:
